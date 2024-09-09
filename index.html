@@ -1,61 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS 499 ePortfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        header {
-            background-color: #4CAF50;
-            padding: 20px;
-            color: white;
-            font-size: 24px;
-        }
-        section {
-            margin: 20px;
-            text-align: left;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        Welcome to My CS 499 ePortfolio
-    </header>
-
-    <section id="content">
-        <h1>Loading...</h1>
-    </section>
-
-    <script>
-        // GitHub repository information
-        const repo = "even-a-worm-will-turn/ePortfolio";
-
-        // Fetch the README file from GitHub
-        fetch(`https://raw.githubusercontent.com/${repo}/main/README.md`)
-            .then(response => response.text())
-            .then(text => {
-                // Convert the Markdown to HTML using marked.js
-                const content = marked.parse(text);
-                // Insert the converted content into the page
-                document.getElementById('content').innerHTML = content;
-            })
-            .catch(error => {
-                console.error('Error fetching README:', error);
-                document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
-            });
-    </script>
-
-</body>
-</html>
+<h1 id="cs-499-eportfolio-showcase-of-computer-science-skills">CS 499 ePortfolio: Showcase of Computer Science Skills</h1>
+<p>Welcome to my ePortfolio here. Key projects ( items) in three fundamental fields of computer science—<strong>Software Engineering and Design</strong>, <strong>Algorithms and Data Structures</strong>, and <strong>Databases</strong>—showcase my development and competency in each. Descriptions of every artifact, intended improvements, and how each project fits with course outcomes and fundamental computer science knowledge are found below.</p>
+<hr>
+<h2 id="1-weight-tracking-app">1. Weight Tracking App</h2>
+<p><strong>Category</strong>: Software Engineering and Design  </p>
+<p>Personal Project <strong>Source</strong>:</p>
+<h3 id="project-overview-">Project Overview:</h3>
+<p>Simple and easy to use, the Weight Tracking App lets users:</p>
+<p><strong>register and log in</strong> to their personally owned account safely.</p>
+<p>Track their development by adding and changing weight entries.</p>
+<p>Establish <strong>goals</strong> for weight control.</p>
+<p>Get <strong>notifications</strong> to prod them to record their weight.</p>
+<h3 id="improvement-strategy">Improvement Strategy</h3>
+<p>I intend to add the following fixes to raise the functionality of the app:</p>
+<p>Simplify the UI to make it more user-friendly and navigable for consumers of all technical proficiency.</p>
+<p>Provide a simple text-based tool showing users their advancement toward their weight objectives (e.g., &quot;You are 5 lbs away from your goal&quot;).</p>
+<p>Allow users to adjust when they get reminders to enter their weight, therefore improving the notifying mechanism.</p>
+<h3 id="skills-displayed-">Skills displayed:</h3>
+<p>Improving the UI of the app will help to increase user experience.</p>
+<p>Establishing a notification system compatible for several devices is <strong>basic</strong>.</p>
+<p><strong>User authentication</strong> : Guaranturing safe user data management and login.</p>
+<h3 id="course-outcomes-aligned-">Course Outcomes Aligned:</h3>
+<p>Create, design, and present professionally produced, user-need compliant software.</p>
+<p>Use techniques for creating safe and easy-to-use software.</p>
+<h1 id="pseudocode-for-calculating-goal-progress-in-the-weight-tracking-app">Pseudocode for calculating goal progress in the Weight Tracking App</h1>
+<p>function checkGoalProgress(currentWeight, goalWeight):
+    difference = goalWeight - currentWeight</p>
+<pre><code><span class="hljs-keyword">if</span> <span class="hljs-built_in">difference</span> &gt; <span class="hljs-number">0</span>:
+    print <span class="hljs-string">"You are "</span> + <span class="hljs-built_in">difference</span> + <span class="hljs-string">" lbs away from your goal."</span>
+<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> <span class="hljs-built_in">difference</span> == <span class="hljs-number">0</span>:
+    print <span class="hljs-string">"Congratulations! You've reached your goal!"</span>
+<span class="hljs-keyword">else</span>:
+    print <span class="hljs-string">"You've surpassed your goal by "</span> + <span class="hljs-built_in">abs</span>(<span class="hljs-built_in">difference</span>) + <span class="hljs-string">" lbs. Great job!"</span>
+</code></pre><h1 id="example-usage">Example usage</h1>
+<p>currentWeight = 175
+goalWeight = 170
+checkGoalProgress(currentWeight, goalWeight)</p>
+<p>—</p>
+<h2 id="2-dog-search-and-rescue-identification-project">2. Dog Search-and-Rescue Identification Project</h2>
+<p><strong> Category</strong> : Data structures and algorithms  </p>
+<p><strong>Source</strong> : Course Project (Grazioso Salvare)</p>
+<h3 id="project-commentary-">Project Commentary:</h3>
+<p>Designed to assist a client (Grazioso Salvare) find appropriate canines from a database of shelter dogs for search-and-rescue training, this project To assist the client in making wise dog choices, the program sorts and filters canines depending on <strong>breed</strong>, <strong>age</strong>, and <strong>weight</strong>.</p>
+<h3 id="enhancement-scheme-">Enhancement Scheme:</h3>
+<p>I intend to: help the project to run better by:</p>
+<p><strong>Optize the filtering algorithm</strong> to boost the accuracy and quickness in choosing appropriate canines.</p>
+<p>Add <strong>error handling</strong> to guarantee flawless operation even in the case of unanticipated data or inputs lacking.</p>
+<h3 id="skills-clearly-showed-">Skills Clearly Showed:</h3>
+<p>Enhancing the efficiency of the choosing method is <strong>algorithm design and optimization</strong>.</p>
+<p>Including steps to manage erroneous or absent inputs helps to <strong>error handling</strong>.</p>
+<p>Creating a mechanism to rapidly and precisely sort through massive databases is <strong>data filtering</strong>.</p>
+<h3 id="course-results-consistent-">Course Results Consistent:</h3>
+<p>Using algorithmic ideas, design and assess computing solutions.</p>
+<p>Optimize data handling and algorithm performance using well-founded approaches.</p>
+<h1 id="flowchart-">flowchart:</h1>
+<p>Start
+   |
+[Input dog data from the database]
+   |
+[For each dog, apply filtering criteria: age, breed, weight]
+   |
+[Sort remaining dogs based on suitability score (using existing criteria)]
+   |
+[Output filtered list of eligible dogs]
+   |
+End</p>
+<p>----&gt;</p>
+<h2 id="3-artemis-financial-secure-communication-project">3. Artemis Financial Secure Communication Project</h2>
+<p><strong> Category</strong> : Design and Software Engineering and Database  </p>
+<p><strong> Source</strong>: Course Project</p>
+<h3 id="project-outlook-">Project Outlook:</h3>
+<p>Working with <strong>Artemis Financial</strong>, this project refactorated their online application and included safe communication systems. By adding encryption, checksum checking, and switching from HTTP to HTTPS, the security of customer data and payment information was hoped to be enhanced.</p>
+<h3 id="improvement-schedule-">Improvement Schedule:</h3>
+<p>I&#39;ll highlight the following improvements:</p>
+<p>Use an encryption method for safe data moves between servers and clients.</p>
+<p>Provide a mechanism employing checksum technology to confirm the integrity of imported data.</p>
+<p>Refactor the code to substitute HTTPS for HTTP such that every communication is safely encrypted.</p>
+<h3 id="skills-showed-">Skills Showed:</h3>
+<p>Using encryption techniques helps to protect data moves.</p>
+<p>Ensuring all correspondence between the client and server is encrypted via HTTPS guarantees <strong>secure communication</strong>.</p>
+<p>Confirming that data is not corrupted or altered during transport by means of checksum verification helps to <strong>data integrity</strong>.</p>
+<h3 id="course-results-in-line">Course Results in Line</h3>
+<p>Change your attitude to security and apply safe software programs.</p>
+<p>Using industry-standard techniques will help to safeguard data and guarantee safe system connectivity.</p>
+<h1 id="pseudocode-for-enabling-https-in-artemis-financial-project">Pseudocode for enabling HTTPS in Artemis Financial project</h1>
+<h1 id="step-1-generate-an-ssl-certificate-using-keytool">Step 1: Generate an SSL certificate using keytool</h1>
+<p>keytool -genkey -alias mydomain -keyalg RSA -keystore keystore.jks -keysize 2048</p>
+<h1 id="step-2-configure-the-spring-boot-application-to-use-https">Step 2: Configure the Spring Boot application to use HTTPS</h1>
+<h1 id="application-properties">application.properties</h1>
+<p>server.port=8443
+server.ssl.key-store=classpath:keystore.jks
+server.ssl.key-store-password=changeit
+server.ssl.key-password=changeit</p>
+<h1 id="step-3-ensure-that-all-traffic-is-redirected-to-https">Step 3: Ensure that all traffic is redirected to HTTPS</h1>
+<p>class HttpsRedirectConfig extends WebSecurityConfigurerAdapter:</p>
+<pre><code><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> configure(HttpSecurity http):
+    http.requiresChannel().anyRequest().requiresSecure()
+</code></pre><h1 id="now-the-application-will-serve-all-requests-over-https">Now, the application will serve all requests over HTTPS</h1>
+<hr>
+<h2 id="overall-demonstrated-in-eportfolio-">Overall Demonstrated in ePortfolio:</h2>
+<p>From user interface design to guaranteeing safe communication between systems, I have shown my capacity to create and polish professionally-quality software.</p>
+<p>Optimizing data filtering and raising algorithm efficiency has helped me to demonstrate my abilities in managing vast amounts of data and generating scalable solutions.</p>
+<p>Projects like Artemis Financial have helped me to show that I grasp safe database handling, encryption, and secure communication techniques.</p>
+<p>Thank you for reviewing my ePortfolio. Each artifact has been carefully selected and enhanced to demonstrate my continued growth and proficiency in computer science. Please feel free to explore each project through the links provided.</p>
