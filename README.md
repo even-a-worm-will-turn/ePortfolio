@@ -1,5 +1,3 @@
-# ePortfolio
-
 # CS 499 ePortfolio: Showcase of Computer Science Skills
 
 Welcome to my ePortfolio here. Key projects ( items) in three fundamental fields of computer science—**Software Engineering and Design**, **Algorithms and Data Structures**, and **Databases**—showcase my development and competency in each. Descriptions of every artifact, intended improvements, and how each project fits with course outcomes and fundamental computer science knowledge are found below.
